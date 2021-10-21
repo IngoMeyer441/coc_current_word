@@ -5,6 +5,28 @@
 
 This plugin is based on [vim_current_word](https://github.com/dominikduda/vim_current_word).
 
+## Installation
+
+Via `Plug`, `Neobundle` or `Vundle`:
+
+```vim
+Plug 'IngoMeyer441/coc_current_word'
+NeoBundle 'IngoMeyer441/coc_current_word'
+Plugin 'IngoMeyer441/coc_current_word'
+```
+
+Via `Pathogen`:
+
+```bash
+git clone https://github.com/IngoMeyer441/coc_current_word.git ~/.vim/bundle/coc_current_word
+```
+
+Via Vim 8 packages:
+
+```bash
+git clone https://github.com/IngoMeyer441/coc_current_word.git ~/.vim/pack/plugins/start/coc_current_word
+```
+
 ## Quick start
 
 `coc_current_word` will call the CoC action `highlight` on the current word under the cursor. The style of the
