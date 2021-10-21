@@ -6,6 +6,7 @@ let g:coc_current_word_timer_id = 0
 function! coc_current_word#setup_autocommands()
   augroup coc_current_word_buffer
     autocmd! * <buffer>
+    autocmd BufEnter <buffer> call coc_current_word#pre_highlight()
     autocmd CursorMoved <buffer> call coc_current_word#pre_highlight()
     autocmd InsertEnter <buffer> call coc_current_word#handle_insert_enter()
     autocmd InsertLeave <buffer> call coc_current_word#handle_insert_leave()
